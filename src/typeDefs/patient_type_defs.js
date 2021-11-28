@@ -9,7 +9,18 @@ const patientTypeDefs = gql`
         gender: String!
         marital_status: String!
     }
-    extend type Query {
+
+    input PatientInput {
+        id: Int!
+        name: String!
+        telephone: String!
+        age: Int!
+        city: String!
+        gender: String!
+        marital_status: String!
+    }
+
+    type Query {
         patientById(id: Int!): Patient
     }
 `
