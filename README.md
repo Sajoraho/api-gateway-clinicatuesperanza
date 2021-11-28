@@ -1,3 +1,3 @@
 # api-gateway-clinicatuesperanza
 
-##Usando GraphQL como API Gateway
+## Usando GraphQL como API Gateway
