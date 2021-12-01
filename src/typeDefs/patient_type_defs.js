@@ -1,4 +1,5 @@
 const { gql } = require('apollo-server')
+
 const patientTypeDefs = gql`
     type Patient {
         id: Int!
@@ -22,6 +23,12 @@ const patientTypeDefs = gql`
 
     type Query {
         patientById(id: Int!): Patient
+    }
+
+    type Mutation {
+        createPatient(input: PatientInput): Patient
+        updatePatient(id: Int!, input: PatientInput): Patient
+        deletePatient(id: Int!, cascade: false): Boolean
     }
 `
 module.exports = patientTypeDefs
