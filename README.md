@@ -5,13 +5,13 @@
 API Gateway encargada de conectar dos microservicios
 
 - ## Login
-__Login desarrollado con Django__(https://github.com/macachafa/4a-docs)
+[__Login desarrollado con Django__](https://github.com/macachafa/4a-docs)
 
 - ## Back End
 [__Base de datos desarrollada con Spring y Mongo__](https://github.com/macachafa/ClinicaTuEsperanzaBE)
 
 - ## Front End
-__Diseño del sitio desarrollada con Vue__(https://github.com/KRDOZO/Vistas_Vue)
+[__Diseño del sitio desarrollada con Vue__](https://github.com/KRDOZO/Vistas_Vue)
 
 ## Project setup
 ```
