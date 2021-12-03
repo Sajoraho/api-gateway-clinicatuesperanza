@@ -24,3 +24,5 @@ class ClinicaAPI extends RESTDataSource {
         return await this.delete(`/patient/${id}`, patient)
     }
 }
+
+module.exports = ClinicaAPI
