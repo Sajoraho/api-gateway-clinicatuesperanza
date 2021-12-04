@@ -1,18 +1,28 @@
 const historyResolver = {
     Query: {
-        patientById: async (_, { id }, { dataSources, userIdToken }) => {
+        historyByPatient: async (
+            _,
+            { patientDocument },
+            { dataSources, userIdToken }
+        ) => {
             patientToken = (await dataSources.authAPI.getUser(userIdToken)).id
-            if (id == patientToken)
-                return await dataSources.authAPI.patientById(id)
+            if (patientDocument == patientToken)
+                return await dataSources.authAPI.historyByPatient(
+                    patientDocument
+                )
             else return null
         }
     },
 
     Mutation: {
-        createHistory: async (_, { id }, { dataSources, userIdToken }) => {
+        createHistory: async (
+            _,
+            { patientDocument },
+            { dataSources, userIdToken }
+        ) => {
             patientToken = (await dataSources.authAPI.getUser(userIdToken)).id
-            if (id == patientToken)
-                return await dataSources.authAPI.createHistory(id)
+            if (patientDocument == patientToken)
+                return await dataSources.authAPI.createHistory(patientDocument)
             else return null
         }
     }

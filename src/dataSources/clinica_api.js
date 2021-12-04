@@ -23,6 +23,24 @@ class ClinicaAPI extends RESTDataSource {
     async deletePatient(patient) {
         return await this.delete(`/patient/${id}`, patient)
     }
+
+    async createHistory(history) {
+        patient = new Object(JSON.parse(JSON.stringify(history)))
+        return await this.post('/history', history)
+    }
+
+    async historyByPatient(patientDocument) {
+        return await this.get(`/history/${patientDocument}`)
+    }
+
+    async updateHistory(history) {
+        patient = new Object(JSON.parse(JSON.stringify(patient)))
+        return await this.put(`/history/${patientDocument}`, history)
+    }
+
+    async deleteHistory(history) {
+        return await this.delete(`/history/${patientDocument}`, history)
+    }
 }
 
 module.exports = ClinicaAPI

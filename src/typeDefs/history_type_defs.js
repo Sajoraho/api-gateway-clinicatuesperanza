@@ -2,25 +2,27 @@ const { gql } = require('apollo-server')
 
 const historyTypeDefs = gql`
     type History {
+        patientDocument: Int!
         date: String!
         prescription: String!
         description: String!
     }
 
-    input HistoryInput{
+    input HistoryInput {
+        patientDocument: Int!
         date: String!
         prescription: String!
         description: String!
     }
 
-    extend type Query{
-        historyByPatient(id: Int!): [History]
+    type Query {
+        historyByPatient(patientDocument: Int!): History
     }
 
-    extend type Mutation{
+    type Mutation {
         createHistory(input: HistoryInput): History
-        updateHistory(id: Int!, input: HistoryInput): History
-        deleteHistory(id: Int!, cascade: false): Boolean
+        updateHistory(patientDocument: Int!, input: HistoryInput): History
+        deleteHistory(patientDocument: Int!, cascade: false): Boolean
     }
 `
 module.exports = historyTypeDefs
