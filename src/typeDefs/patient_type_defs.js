@@ -28,7 +28,7 @@ const patientTypeDefs = gql`
     type Mutation {
         createPatient(input: PatientInput): Patient
         updatePatient(id: Int!, input: PatientInput): Patient
-        deletePatient(id: Int!, cascade: false): Boolean
+       # deletePatient(id: Int!): Patient
     }
 `
 module.exports = patientTypeDefs
