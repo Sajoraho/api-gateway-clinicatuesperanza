@@ -22,7 +22,7 @@ API Gateway encargada de conectar dos microservicios
 npm install
 ```
 
-### Activar servidor local
+### Desplegar servidor local
 
 ```
 node src/index.js
