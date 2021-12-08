@@ -22,7 +22,7 @@ const historyTypeDefs = gql`
     type Mutation {
         createHistory(input: HistoryInput): History
         updateHistory(patientDocument: Int!, input: HistoryInput): History
-       # deleteHistory(patientDocument: Int!): History
+        deleteHistory(patientDocument: Int!): Boolean
     }
 `
 module.exports = historyTypeDefs

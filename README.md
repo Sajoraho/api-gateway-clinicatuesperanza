@@ -5,22 +5,33 @@
 API Gateway encargada de conectar dos microservicios
 
 - ## Login
-[__Login desarrollado con Django__](https://github.com/macachafa/4a-docs)
+
+    [**Login desarrollado con Django**](https://github.com/macachafa/4a-docs)
 
 - ## Back End
-[__Base de datos desarrollada con Spring y Mongo__](https://github.com/macachafa/ClinicaTuEsperanzaBE)
+
+    [**Base de datos desarrollada con Spring y Mongo**](https://github.com/macachafa/ClinicaTuEsperanzaBE)
 
 - ## Front End
-[__Diseño del sitio desarrollada con Vue__](https://github.com/KRDOZO/Vistas_Vue)
 
-## Project setup
+    [**Diseño del sitio desarrollada con Vue**](https://github.com/R12404/Vistas-de-Usuario-)
+
+## Instalar librerias
+
 ```
 npm install
 ```
 
-### Compile
+### Activar servidor local
+
 ```
 node src/index.js
 ```
 
-Despleagado en __Heroku__
+### Trabajar con servidor activo
+
+```
+nodemon src/index.js
+```
+
+Despleagado en **Heroku**
