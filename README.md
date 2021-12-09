@@ -34,4 +34,4 @@ node src/index.js
 nodemon src/index.js
 ```
 
-Despleagado en **Heroku**
+Despleagado en [__Heroku__](https://apigateway-clinica.herokuapp.com)
